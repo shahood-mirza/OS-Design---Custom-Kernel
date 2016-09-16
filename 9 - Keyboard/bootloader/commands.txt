@@ -1,0 +1,7 @@
+nasm Boot1.asm -f bin -o boot1.bin
+partcopy boot1.bin 0 200 -f0
+nasm Stage2.asm -f bin -o STAGE2.SYS
+copy STAGE2.SYS a:\STAGE2.SYS
+
+
+
